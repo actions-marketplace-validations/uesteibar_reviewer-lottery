@@ -7,7 +7,7 @@ module.exports = {
   testRunner: 'jest-circus/runner',
   extensionsToTreatAsEsm: ['.ts'],
   transform: {
-    '^.+\\.ts$': [
+    '^.+\\.(ts|js)$': [
       'ts-jest',
       {
         useESM: true
@@ -15,7 +15,7 @@ module.exports = {
     ]
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(@octokit)/)'
+    'node_modules/(?!(@octokit|nock)/)'
   ],
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1'
