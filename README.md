@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: omniplatypus/reviewer-lottery@v3.2.1
+    - uses: uesteibar/reviewer-lottery@v4.0.1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         base-url: https://git.yourcompany.com/api/v3
